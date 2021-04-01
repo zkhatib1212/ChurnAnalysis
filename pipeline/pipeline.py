@@ -1,6 +1,13 @@
 """
 Script to chain all processing of test data and predict from saved model
 """
+
+"""
+
+To run this script type following command in Terminal (Mac) or Command Prompt (Windows):
+
+! python pipeline.py PredictChurn --local-scheduler --test-data-file ../Data/test.csv
+"""
 import os, pickle
 import pandas as pd
 from xgboost import XGBClassifier 
